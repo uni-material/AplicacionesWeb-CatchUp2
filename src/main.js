@@ -13,7 +13,7 @@ import Avatar from "primevue/avatar";
 import Menu from "primevue/menu";
 import Menubar from "primevue/menubar";
 import Toolbar from "primevue/toolbar";
-
+import i18n from "./i18n.js";
 
 const app = createApp(App);
 app.use(PrimeVue, { ripple: true, theme: { preset: Aura, options: {
@@ -31,4 +31,5 @@ app.component('pv-card', Card)
     .component('pv-menubar', Menubar)
     .component('pv-toolbar', Toolbar);
 
+app.use(i18n)
 app.mount('#app')
